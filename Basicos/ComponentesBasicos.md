@@ -1,0 +1,9 @@
+| Elemento                 | ¿Qué es?                                                     | ¿Para qué sirve?                                                                                                 |
+| ------------------------ | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| `using System;`          | Importa el **espacio de nombres** `System`                   | Permite usar clases predefinidas como `Console` sin escribir `System.Console` cada vez.                          |
+| `namespace MiPrimerApp`  | Es como una **carpeta lógica** que agrupa código relacionado | Evita conflictos de nombres cuando tu proyecto crece. Piensa en ello como un "apellido" para tus clases.         |
+| `class Program`          | Una **clase** es la plantilla o molde para crear objetos     | En C# *todo* el código debe vivir dentro de una clase. Es el pilar de la Programación Orientada a Objetos (POO). |
+| `static void Main(...)`  | El **método principal** — punto de entrada del programa      | Es donde la computadora comienza a ejecutar tu código. Sin él, el programa no arranca.                           |
+| `Console.WriteLine(...)` | Un **método** que imprime texto en la consola                | Es tu forma más básica de mostrar información al usuario.                                                        |
+| `;`                      | **Punto y coma**                                             | Indica el fin de una instrucción. En C# es obligatorio al final de cada línea ejecutable.                        |
+| `{}`                     | **Llaves**                                                   | Delimitan bloques de código (clases, métodos, estructuras de control).                                           |
