@@ -22,6 +22,7 @@ class Program
             Menu();
             Console.Write("Elija una opcion:");
             int.TryParse(Console.ReadLine(),out opcion);
+            Console.Clear();
             switch (opcion)
             {
                 case 1:
@@ -53,11 +54,15 @@ class Program
                     {
                         Energía_inicial=Energía_inicial+2;
                     }
+                    if (Energía_inicial==9)
+                    {
+                        Energía_inicial=8;
+                    }
                     break;
                 case 4:
                     if ((Gemas_iniciales >= 5 && Llaves_iniciales >= 1) || (Tiene_mapa && Gemas_iniciales >= 3 && Energía_inicial > 0))
                     {
-                        Console.WriteLine("El Portal de ha Abierto");
+                        Console.WriteLine("El Portal se ha Abierto");
                         Portal_abierto=true;
                     }
                     else
