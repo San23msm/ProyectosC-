@@ -20,7 +20,7 @@ class Program
             Turnos_usados++;
             EstadoActual(Energía_inicial,Gemas_iniciales,Llaves_iniciales,Trampas_activadas,Turnos_usados,Tiene_mapa,Portal_abierto);
             Menu();
-            Console.Write("Elija una opcion:");
+            Console.Write("Elija una opcion: ");
             int.TryParse(Console.ReadLine(),out opcion);
             Console.Clear();
             switch (opcion)
@@ -50,13 +50,13 @@ class Program
                     }
                     break;
                 case 3:
-                    if (Energía_inicial < 8)
+                    if (Energía_inicial < 7)
                     {
                         Energía_inicial=Energía_inicial+2;
                     }
-                    if (Energía_inicial==9)
+                    else if (Energía_inicial==7)
                     {
-                        Energía_inicial=8;
+                        Energía_inicial++;
                     }
                     break;
                 case 4:
