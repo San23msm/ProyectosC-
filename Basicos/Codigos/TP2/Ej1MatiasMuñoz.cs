@@ -4,24 +4,31 @@ class Program
 {
     static void Main()
     {
-        int Energía_inicial= 8;
-        int Gemas_iniciales= 0;
-        int Llaves_iniciales= 0;
-        int Trampas_activadas= 0;
-        int Turnos_usados= 0;
-        bool Tiene_mapa= false;
-        bool Portal_abierto= false;
-        int Max_turnos= 12;
+        int Energía_inicial = 8;
+        int Gemas_iniciales = 0;
+        int Llaves_iniciales = 0;
+        int Trampas_activadas = 0;
+        int Turnos_usados = 0;
+        bool Tiene_mapa = false;
+        bool Portal_abierto = false;
+        int Max_turnos = 12;
         int opcion;
 
         do
         {
             Console.Clear();
-            Turnos_usados++;
-            EstadoActual(Energía_inicial,Gemas_iniciales,Llaves_iniciales,Trampas_activadas,Turnos_usados,Tiene_mapa,Portal_abierto);
+            EstadoActual(Energía_inicial, Gemas_iniciales, Llaves_iniciales, Trampas_activadas, Turnos_usados, Tiene_mapa, Portal_abierto);
             Menu();
-            Console.Write("Elija una opcion: ");
-            int.TryParse(Console.ReadLine(),out opcion);
+
+            Console.Write("Elija una opcion (1-4): ");
+            while (!int.TryParse(Console.ReadLine(), out opcion) || opcion < 1 || opcion > 4)
+            {
+                Console.WriteLine("Opción inválida. Intente de nuevo.");
+                Console.Write("Elija una opcion (1-4): ");
+            }
+
+            Turnos_usados++;
+
             Console.Clear();
             switch (opcion)
             {
@@ -31,20 +38,19 @@ class Program
                     if (Gemas_iniciales >= 5)
                     {
                         Console.WriteLine("El jugador ya tiene suficientes gemas para una de las condiciones del portal.");
-    
                     }
                     break;
                 case 2:
-                    Energía_inicial=Energía_inicial-2;
+                    Energía_inicial = Energía_inicial - 2;
                     if (Llaves_iniciales == 0)
                     {
                         Llaves_iniciales++;
                     }
                     else if (Llaves_iniciales >= 1 && Tiene_mapa == false)
                     {
-                        Tiene_mapa=true;
+                        Tiene_mapa = true;
                     }
-                    else if(Llaves_iniciales>=1&& Tiene_mapa == true)
+                    else if (Llaves_iniciales >= 1 && Tiene_mapa == true)
                     {
                         Trampas_activadas++;
                     }
@@ -52,9 +58,9 @@ class Program
                 case 3:
                     if (Energía_inicial < 7)
                     {
-                        Energía_inicial=Energía_inicial+2;
+                        Energía_inicial = Energía_inicial + 2;
                     }
-                    else if (Energía_inicial==7)
+                    else if (Energía_inicial == 7)
                     {
                         Energía_inicial++;
                     }
@@ -63,7 +69,7 @@ class Program
                     if ((Gemas_iniciales >= 5 && Llaves_iniciales >= 1) || (Tiene_mapa && Gemas_iniciales >= 3 && Energía_inicial > 0))
                     {
                         Console.WriteLine("El Portal se ha Abierto");
-                        Portal_abierto=true;
+                        Portal_abierto = true;
                     }
                     else
                     {
@@ -71,21 +77,20 @@ class Program
                     }
                     break;
             }
-        }while(Portal_abierto==false&&Energía_inicial>0&&Turnos_usados<Max_turnos);
+        } while (Portal_abierto == false && Energía_inicial > 0 && Turnos_usados < Max_turnos);
 
-        EstadoActual(Energía_inicial,Gemas_iniciales,Llaves_iniciales,Trampas_activadas,Turnos_usados,Tiene_mapa,Portal_abierto);
-
-
+        EstadoActual(Energía_inicial, Gemas_iniciales, Llaves_iniciales, Trampas_activadas, Turnos_usados, Tiene_mapa, Portal_abierto);
     }
-    static void EstadoActual(int Energía_inicial,int Gemas_iniciales,int Llaves_iniciales,int Trampas_activadas, int Turnos_usados,bool Tiene_mapa, bool Portal_abierto)
+
+    static void EstadoActual(int Energía_inicial, int Gemas_iniciales, int Llaves_iniciales, int Trampas_activadas, int Turnos_usados, bool Tiene_mapa, bool Portal_abierto)
     {
         Console.WriteLine(" ");
         Console.WriteLine("----Estado Actual del Jugador----");
-        Console.WriteLine("Energia: "+Energía_inicial);
-        Console.WriteLine("Gemas: "+Gemas_iniciales);
-        Console.WriteLine("Llaves: "+Llaves_iniciales);
-        Console.WriteLine("Trampas Activadas: "+Trampas_activadas);
-        Console.WriteLine("Turno: "+Turnos_usados);
+        Console.WriteLine("Energia: " + Energía_inicial);
+        Console.WriteLine("Gemas: " + Gemas_iniciales);
+        Console.WriteLine("Llaves: " + Llaves_iniciales);
+        Console.WriteLine("Trampas Activadas: " + Trampas_activadas);
+        Console.WriteLine("Turno: " + Turnos_usados);
         if (Tiene_mapa)
         {
             Console.WriteLine("El Jugador Tiene Mapa");
@@ -104,6 +109,7 @@ class Program
         }
         Console.WriteLine(" ");
     }
+
     static void Menu()
     {
         Console.WriteLine(" ");
@@ -114,7 +120,5 @@ class Program
         Console.WriteLine("3. Descansar");
         Console.WriteLine("4. Intentar abrir el portal");
         Console.WriteLine("----------------------------------");
-        
     }
-    
 }
