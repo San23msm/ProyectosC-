@@ -21,19 +21,6 @@ El concepto académico que respalda esto es el **Pensamiento Computacional**. No
 
 **b. Reconocimiento de patrones**
     Identificar similitudes o regularidades entre problemas.
-                                                -------------
-                                        ------- | Problemas |-------
-                                        |       -------------      |
-                                        |                          |
-                                     ---------               -------------
-                                     | Sumar |               |   Contar  |
-                                     ---------               |  Cantidad |
-                                        |                    -------------
-                                        |                          | 
-                                ------------------           -------------
-                                |    Calcular    |           |  Dividir  |
-                                |    Promedio    |  <------  |  Cantidad |
-                                ------------------           -------------
 
 **c. Abstracción**
     Separar lo relevante de lo irrelevante. Una computadora no "entiende" contexto, solo lo procesa lo que le fue explicitado. Expresiones vagas como "hacer la cuenta" suelen indicar que la solución aún no está lo suficientemente especificada.
@@ -50,11 +37,25 @@ El concepto académico que respalda esto es el **Pensamiento Computacional**. No
 
 No es un mero fomalismo es una **abstracción del módulo de maquina de Turing**. Todo sistema computacional, por complejo que sea, puede describirse como una función que transforma entradas en salidas mediante un proceso.
 
-    **Entrada: ** Datos que el sistema recibe del exterior.
-    **Proceso: ** Transformaciones definidas sobre esos datos.
-    **Salida: ** Resultados visibles o internos del sistema.
+    Entrada: Datos que el sistema recibe del exterior.
+    Proceso: Transformaciones definidas sobre esos datos.
+    Salida: Resultados visibles o internos del sistema.
 
 # Fases de Resolución 
 
 Presentamos seis fases, donde vamos a enfatizar proque el orden es **innegociable** en una formación.
+    **1. Definición**: Comprender exactamente que se pide.
+    **2. Ánalisis**: Identificar entradas, procesos, salidas, casos especiales.
+    **3. Diseño**: Construir la estrategia: algoritmos, módulos y estructuras.
+    **4. Codificación**: Traducir el diseño a un lenguaje formal.
+    **5: Prueba y depuración**: Verificar con datos de prueba, corregir errores lógixos.
+    **6. Documentación**: Registrar que hace, por qué y cómo modificarlo.
 
+# Del Lenguaje Coloquial al Algoritmo formal
+
+Problema -> Idea de solución -> Procedimiento informal -> Algoritmo
+
+La distancia entre "sumar las notas y sacar promedio"; El primero es una **intención**, y el segundo, una **formalización ejecutable**.
+
+# Propiedades que debe cumplir un algoritmo
+    **1. Orden lógico**: 
