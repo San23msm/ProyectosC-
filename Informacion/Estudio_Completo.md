@@ -44,12 +44,18 @@ No es un mero fomalismo es una **abstracción del módulo de maquina de Turing**
 # Fases de Resolución 
 
 Presentamos seis fases, donde vamos a enfatizar proque el orden es **innegociable** en una formación.
-    **1. Definición**: Comprender exactamente que se pide.
-    **2. Ánalisis**: Identificar entradas, procesos, salidas, casos especiales.
-    **3. Diseño**: Construir la estrategia: algoritmos, módulos y estructuras.
-    **4. Codificación**: Traducir el diseño a un lenguaje formal.
-    **5: Prueba y depuración**: Verificar con datos de prueba, corregir errores lógixos.
-    **6. Documentación**: Registrar que hace, por qué y cómo modificarlo.
+
+**1. Definición**: Comprender exactamente que se pide.
+
+**2. Ánalisis**: Identificar entradas, procesos, salidas, casos especiales.
+
+**3. Diseño**: Construir la estrategia: algoritmos, módulos y estructuras.
+
+**4. Codificación**: Traducir el diseño a un lenguaje formal.
+
+**5: Prueba y depuración**: Verificar con datos de prueba, corregir errores lógixos.
+
+**6. Documentación**: Registrar que hace, por qué y cómo modificarlo.
 
 # Del Lenguaje Coloquial al Algoritmo formal
 
