@@ -1,0 +1,15 @@
+C:\Users\junio\OneDrive\Escritorio\C#\Proyectos\Basicos\Basicos\Interfaz\formsSimple\obj\Debug\net8.0-windows\formsSimple.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\junio\OneDrive\Escritorio\C#\Proyectos\Basicos\Basicos\Interfaz\formsSimple\obj\Debug\net8.0-windows\formsSimple.AssemblyInfoInputs.cache
+C:\Users\junio\OneDrive\Escritorio\C#\Proyectos\Basicos\Basicos\Interfaz\formsSimple\obj\Debug\net8.0-windows\formsSimple.AssemblyInfo.cs
+C:\Users\junio\OneDrive\Escritorio\C#\Proyectos\Basicos\Basicos\Interfaz\formsSimple\obj\Debug\net8.0-windows\formsSimple.csproj.CoreCompileInputs.cache
+C:\Users\junio\OneDrive\Escritorio\C#\Proyectos\Basicos\Basicos\Interfaz\formsSimple\obj\Debug\net8.0-windows\formsSimple.sourcelink.json
+C:\Users\junio\OneDrive\Escritorio\C#\Proyectos\Basicos\Basicos\Interfaz\formsSimple\bin\Debug\net8.0-windows\formsSimple.exe
+C:\Users\junio\OneDrive\Escritorio\C#\Proyectos\Basicos\Basicos\Interfaz\formsSimple\bin\Debug\net8.0-windows\formsSimple.deps.json
+C:\Users\junio\OneDrive\Escritorio\C#\Proyectos\Basicos\Basicos\Interfaz\formsSimple\bin\Debug\net8.0-windows\formsSimple.runtimeconfig.json
+C:\Users\junio\OneDrive\Escritorio\C#\Proyectos\Basicos\Basicos\Interfaz\formsSimple\bin\Debug\net8.0-windows\formsSimple.dll
+C:\Users\junio\OneDrive\Escritorio\C#\Proyectos\Basicos\Basicos\Interfaz\formsSimple\bin\Debug\net8.0-windows\formsSimple.pdb
+C:\Users\junio\OneDrive\Escritorio\C#\Proyectos\Basicos\Basicos\Interfaz\formsSimple\obj\Debug\net8.0-windows\formsSimple.dll
+C:\Users\junio\OneDrive\Escritorio\C#\Proyectos\Basicos\Basicos\Interfaz\formsSimple\obj\Debug\net8.0-windows\refint\formsSimple.dll
+C:\Users\junio\OneDrive\Escritorio\C#\Proyectos\Basicos\Basicos\Interfaz\formsSimple\obj\Debug\net8.0-windows\formsSimple.pdb
+C:\Users\junio\OneDrive\Escritorio\C#\Proyectos\Basicos\Basicos\Interfaz\formsSimple\obj\Debug\net8.0-windows\formsSimple.genruntimeconfig.cache
+C:\Users\junio\OneDrive\Escritorio\C#\Proyectos\Basicos\Basicos\Interfaz\formsSimple\obj\Debug\net8.0-windows\ref\formsSimple.dll
